@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --fontFamily: "Josefin Sans";
+  --mainColor: #cd1f1f;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: #0f0d0d;
+}
+
+/*Starting the style of the navbar*/
+.navbar {
+  background-color: #0f0d0d;
+}
+
+.navbar-nav>li {
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-brand>span {
+  color: var(--mainColor);
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: var(--mainColor);
+}
+
+.nav-btn {
+  background-color: var(--mainColor);
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.nav-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--mainColor);
+  box-shadow: #cd1f1f 0px 2px 8px 0px;
+}
+
+/*Starting the hero section (Swiper Style) - sec-1*/
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[class*="swiper-button"] {
+  width: 40px;
+  height: 40px;
+  background-color: #cd1f1f;
+  color: white;
+  font-size: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f0d0d6f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title-text {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.title-text>span {
+  color: var(--mainColor);
+}
+
+.movie-desc {
+  display: inline-block;
+  width: 80%;
+  color: #EEE;
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: justify;
+}
+@media only screen and (max-width:500px){
+  .movie-desc{
+    display: none;
+  }
+}
+.movie-avg {
+  font-size : 2rem;
+  color:white;
+  padding-left: 20px;
+}
+.movie-avg>span{
+  color: var(--mainColor);
+}
+.fa-star{
+  color:yellow
+}
+
+.red-line {
+  height: 2px;
+  width: 100px;
+  background-color: var(--mainColor);
+}
+
+.btn.btn-watch:first-of-type {
+  position: relative;
+  z-index: 2;
+  background-color: var(--mainColor);
+  color: white;
+  border-radius: 0;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.btn.btn-watch2 {
+  background-color: rgba(255, 255, 255, 0.151);
+  border: 1px solid var(--mainColor);
+  font-size: 1.2rem;
+  border-radius: 0;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Starting the style of second section */
+.sec-2-head {
+  font-size: 2.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.sec-2-head span {
+  color: var(--mainColor);
+}
+
+span.red-line {
+  display: inline-block;
+  width: 150px;
+  border-bottom: 1px solid var(--mainColor);
+}
+
+.sec-2-head+div {
+  color: gray;
+  text-align: justify;
+}
+
+.see-more {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.see-more>.btn {
+  background-color: var(--mainColor);
+  color: white;
+  height: 40px !important;
+  border-radius: 0;
+}
+
+/* Starting styling of trending section- sec-2 */
+.swiper-two,
+.swiper-three {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+img.trend-img {
+  width: 300px;
+}
+
+.swiper-custom-button-prev,
+.swiper-custom-button-next,
+.swiper-custom2-button-prev,
+.swiper-custom2-button-next {
+  background-color: var(--mainColor);
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.swiper-custom-button-prev,
+.swiper-custom2-button-prev {
+  background-color: transparent;
+  border: 1px solid var(--mainColor);
+}
+
+.btns-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Starting the style of world of classics section - sec-4*/
+.world-classic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.world-classic p:first-of-type {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.world-classic p:first-of-type>.red-head {
+  color: var(--mainColor);
+}
+
+.world-classic p:last-of-type {
+  color: #EEE;
+  line-height: 1.9;
+  text-align: justify;
+  padding-right: 20%;
+}
+
+.classic-img {
+  position: relative;
+}
+
+.classic-img::before {
+  content: "";
+  background-color: var(--mainColor);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-10%, 5%);
+  z-index: -1;
+}
+
+.btn.btn-explore {
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 1.3rem;
+  width: 100px;
+}
+
+/*Starting Pricing Card Style - sec-6*/
+.pricing-card {
+  background-color: black;
+  padding: 20px 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pricing-card p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.pricing-card p:nth-child(2) {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.pricing-card p:nth-child(3) {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pricing-card button {
+  width: 90%;
+  background-color: var(--mainColor);
+  height: 40px;
+  border: none;
+  color: white;
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  padding: 8px;
+}
+
+.pricing-card ul li i {
+  color: var(--mainColor);
+  padding-right: 5px;
+  font-size: 1.3rem;
+}
+
+/*Starting footer style*/
+footer {
+  background-color: black;
+  padding: 30px 10px;
+}
+
+.footer p:first-child {
+  color: var(--mainColor);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.footer p:nth-child(2) {
+  color: white;
+}
+
+.footer input {
+  background-color: #0f0d0d;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  width: 60%;
+}
+
+.footer input::placeholder {
+  color: #EEE;
+}
+
+.footer button {
+  background-color: var(--mainColor);
+  color: white;
+  height: 50px;
+  border-radius: 0;
+}
+
+.footer .btn:hover {
+  color: var(--mainColor);
+}
+
+footer .about-social button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+footer .about-social button:nth-of-type(1):hover {
+  background-color: #3b5998;
+  border: none;
+}
+
+footer .about-social button:nth-of-type(2):hover {
+  background-color: rgb(231, 77, 137);
+  border: none;
+}
+
+footer .about-social button:nth-of-type(3):hover {
+  background-color: rgb(23, 156, 240);
+  border: none;
+}
+
+footer .about-social button:nth-of-type(4):hover {
+  background-color: rgb(40, 103, 178);
+  border: none;
+}
+
+footer .about-social button:nth-of-type(5):hover {
+  background-color: rgb(185, 56, 158);
+  border: none;
+}
+.footer-txt {
+  color: #EEE;
+}
